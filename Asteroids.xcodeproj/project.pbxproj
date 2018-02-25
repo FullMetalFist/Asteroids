@@ -16,6 +16,7 @@
 		7C26BCE12036174300B087B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C26BCE02036174300B087B9 /* Assets.xcassets */; };
 		7C26BCE42036174300B087B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C26BCE22036174300B087B9 /* LaunchScreen.storyboard */; };
 		7C26BCEF2036174300B087B9 /* AsteroidsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C26BCEE2036174300B087B9 /* AsteroidsTests.swift */; };
+		7C279FD720430C430097872B /* SpaceDust.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7C279FD620430C430097872B /* SpaceDust.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		7C26BCEA2036174300B087B9 /* AsteroidsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsteroidsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C26BCEE2036174300B087B9 /* AsteroidsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidsTests.swift; sourceTree = "<group>"; };
 		7C26BCF02036174300B087B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C279FD620430C430097872B /* SpaceDust.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SpaceDust.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				7C26BCD32036174300B087B9 /* AppDelegate.swift */,
 				7C26BCD52036174300B087B9 /* GameScene.sks */,
+				7C279FD620430C430097872B /* SpaceDust.sks */,
 				7C26BCD72036174300B087B9 /* Actions.sks */,
 				7C26BCD92036174300B087B9 /* GameScene.swift */,
 				7C26BCDB2036174300B087B9 /* GameViewController.swift */,
@@ -192,6 +195,7 @@
 				7C26BCD62036174300B087B9 /* GameScene.sks in Resources */,
 				7C26BCE12036174300B087B9 /* Assets.xcassets in Resources */,
 				7C26BCE42036174300B087B9 /* LaunchScreen.storyboard in Resources */,
+				7C279FD720430C430097872B /* SpaceDust.sks in Resources */,
 				7C26BCD82036174300B087B9 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
