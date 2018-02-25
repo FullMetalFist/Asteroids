@@ -14,6 +14,15 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         // called when game scene is ready to run
+        let background = SKSpriteNode(imageNamed: "space.jpg")
+        background.zPosition = -1
+        addChild(background)
+        
+        if let particles = SKEmitterNode(fileNamed: "SpaceDust") {
+            particles.advanceSimulationTime(10)
+            particles.position.x = 512
+            addChild(particles)
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
