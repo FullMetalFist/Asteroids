@@ -35,6 +35,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         player.physicsBody = SKPhysicsBody(texture: player.texture!, size: player.size)
         player.physicsBody?.categoryBitMask = 1
+        player.physicsBody?.affectedByGravity = false
         
         gameTimer = Timer.scheduledTimer(timeInterval: 0.35, target: self, selector: #selector(createEnemy), userInfo: nil, repeats: true)
         physicsWorld.contactDelegate = self
@@ -82,6 +83,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         sprite.physicsBody?.linearDamping = 0
         sprite.physicsBody?.contactTestBitMask = 1
         sprite.physicsBody?.categoryBitMask = 0
+        sprite.physicsBody?.affectedByGravity = false
     }
     
     func didBegin(_ contact: SKPhysicsContact) {
