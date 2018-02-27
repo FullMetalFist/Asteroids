@@ -13,15 +13,27 @@ import GameplayKit
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
     let player = SKSpriteNode(imageNamed: "player-rocket.png")
+    let scoreLabel = SKLabelNode(fontNamed: "AvenirNextCondensed-Bold")
     var touchingPlayer = false
     
     var gameTimer: Timer?
+    var score = 0 {
+        didSet {
+            scoreLabel.text = "SCORE: \(score)"
+        }
+    }
     
     override func didMove(to view: SKView) {
         // called when game scene is ready to run
         let background = SKSpriteNode(imageNamed: "space.jpg")
         background.zPosition = -1
         addChild(background)
+        
+        scoreLabel.zPosition = 2
+        scoreLabel.position.y = 200
+        addChild(scoreLabel)
+        
+        score = 0
         
         if let particles = SKEmitterNode(fileNamed: "SpaceDust") {
             particles.advanceSimulationTime(10)
