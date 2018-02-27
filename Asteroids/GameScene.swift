@@ -85,7 +85,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let randomDistribution = GKRandomDistribution(lowestValue: -350, highestValue: 350)
         
         let sprite = SKSpriteNode(imageNamed: "asteroid")
-        sprite.position = CGPoint(x: 200, y: randomDistribution.nextInt())
+        sprite.position = CGPoint(x: 1200, y: randomDistribution.nextInt())
         sprite.name = "enemy"
         sprite.zPosition = 1
         addChild(sprite)
