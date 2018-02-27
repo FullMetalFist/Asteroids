@@ -82,6 +82,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func createEnemy() {
+        createBonus()
         let randomDistribution = GKRandomDistribution(lowestValue: -350, highestValue: 350)
         
         let sprite = SKSpriteNode(imageNamed: "asteroid")
@@ -98,6 +99,24 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         sprite.physicsBody?.affectedByGravity = false
     }
     
+    func createBonus() {
+        let randomDistribution = GKRandomDistribution(lowestValue: -350, highestValue: 350)
+        
+        let sprite = SKSpriteNode(imageNamed: "energy")
+        sprite.position = CGPoint(x: 1200, y: randomDistribution.nextInt())
+        sprite.name = "bonus"
+        sprite.zPosition = 1
+        addChild(sprite)
+        
+        sprite.physicsBody = SKPhysicsBody(texture: sprite.texture!, size: sprite.size)
+        sprite.physicsBody?.velocity = CGVector(dx: -500, dy: 0)
+        sprite.physicsBody?.linearDamping = 0
+        sprite.physicsBody?.contactTestBitMask = 1
+        sprite.physicsBody?.categoryBitMask = 0
+        sprite.physicsBody?.collisionBitMask = 0
+        sprite.physicsBody?.affectedByGravity = false
+    }
+    
     func didBegin(_ contact: SKPhysicsContact) {
         guard let nodeA = contact.bodyA.node else { return }
         guard let nodeB = contact.bodyB.node else { return }
@@ -110,8 +129,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func playerHit(_ node: SKNode) {
-        // TODO: uncomment & remove print statement
-//        player.removeFromParent()
-        print("Hit")
+        if node.name == "bonus" {
+            score += 1
+            node.removeFromParent()
+            return
+        }
+        player.removeFromParent()
     }
 }
