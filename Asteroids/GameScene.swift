@@ -110,6 +110,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func playerHit(_ node: SKNode) {
-        player.removeFromParent()
+        // TODO: uncomment & remove print statement
+//        player.removeFromParent()
+        print("Hit")
     }
 }
