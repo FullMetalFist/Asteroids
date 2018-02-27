@@ -14,6 +14,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     let player = SKSpriteNode(imageNamed: "player-rocket.png")
     let scoreLabel = SKLabelNode(fontNamed: "AvenirNextCondensed-Bold")
+    let music = SKAudioNode(fileNamed: "cyborg-ninja.mp3")
     var touchingPlayer = false
     
     var gameTimer: Timer?
@@ -28,7 +29,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let background = SKSpriteNode(imageNamed: "space.jpg")
         background.zPosition = -1
         addChild(background)
-        
+        addChild(music)
         scoreLabel.zPosition = 2
         scoreLabel.position.y = 200
         addChild(scoreLabel)
@@ -132,8 +133,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         if node.name == "bonus" {
             score += 1
             node.removeFromParent()
+            let sound = SKAction.playSoundFileNamed("bonus.wav", waitForCompletion: false)
+            run(sound)
             return
         }
         player.removeFromParent()
+        let sound = SKAction.playSoundFileNamed("explosion.wav", waitForCompletion: false)
+        run(sound)
     }
 }
