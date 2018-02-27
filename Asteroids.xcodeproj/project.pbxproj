@@ -20,6 +20,7 @@
 		7CCE62AC2045B785009AB8A9 /* cyborg-ninja.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7CCE62AB2045B785009AB8A9 /* cyborg-ninja.mp3 */; };
 		7CCE62AE2045B7E4009AB8A9 /* explosion.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7CCE62AD2045B7E3009AB8A9 /* explosion.wav */; };
 		7CCE62B02045B85A009AB8A9 /* bonus.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7CCE62AF2045B85A009AB8A9 /* bonus.wav */; };
+		7CCE62B22045BDFE009AB8A9 /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7CCE62B12045BDFE009AB8A9 /* Explosion.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		7CCE62AB2045B785009AB8A9 /* cyborg-ninja.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "cyborg-ninja.mp3"; sourceTree = "<group>"; };
 		7CCE62AD2045B7E3009AB8A9 /* explosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explosion.wav; sourceTree = "<group>"; };
 		7CCE62AF2045B85A009AB8A9 /* bonus.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bonus.wav; sourceTree = "<group>"; };
+		7CCE62B12045BDFE009AB8A9 /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				7C26BCD52036174300B087B9 /* GameScene.sks */,
 				7C279FD620430C430097872B /* SpaceDust.sks */,
 				7C26BCD72036174300B087B9 /* Actions.sks */,
+				7CCE62B12045BDFE009AB8A9 /* Explosion.sks */,
 				7C26BCD92036174300B087B9 /* GameScene.swift */,
 				7C26BCDB2036174300B087B9 /* GameViewController.swift */,
 				7C26BCDD2036174300B087B9 /* Main.storyboard */,
@@ -207,6 +210,7 @@
 				7C26BCE12036174300B087B9 /* Assets.xcassets in Resources */,
 				7C26BCE42036174300B087B9 /* LaunchScreen.storyboard in Resources */,
 				7C279FD720430C430097872B /* SpaceDust.sks in Resources */,
+				7CCE62B22045BDFE009AB8A9 /* Explosion.sks in Resources */,
 				7CCE62AC2045B785009AB8A9 /* cyborg-ninja.mp3 in Resources */,
 				7C26BCD82036174300B087B9 /* Actions.sks in Resources */,
 			);
