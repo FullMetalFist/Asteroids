@@ -147,6 +147,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let gameOver = SKSpriteNode(imageNamed: "gameOver-1")
         gameOver.zPosition = 10
         addChild(gameOver)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            
+            if let scene = GameScene(fileNamed: "GameScene") {
+                scene.scaleMode = .aspectFill
+                self.view?.presentScene(scene)
+            }
+        }
+        
         let sound = SKAction.playSoundFileNamed("explosion.wav", waitForCompletion: false)
         run(sound)
     }
