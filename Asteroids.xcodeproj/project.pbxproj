@@ -18,6 +18,8 @@
 		7C26BCEF2036174300B087B9 /* AsteroidsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C26BCEE2036174300B087B9 /* AsteroidsTests.swift */; };
 		7C279FD720430C430097872B /* SpaceDust.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7C279FD620430C430097872B /* SpaceDust.sks */; };
 		7CCE62AC2045B785009AB8A9 /* cyborg-ninja.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7CCE62AB2045B785009AB8A9 /* cyborg-ninja.mp3 */; };
+		7CCE62AE2045B7E4009AB8A9 /* explosion.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7CCE62AD2045B7E3009AB8A9 /* explosion.wav */; };
+		7CCE62B02045B85A009AB8A9 /* bonus.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7CCE62AF2045B85A009AB8A9 /* bonus.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		7C26BCF02036174300B087B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C279FD620430C430097872B /* SpaceDust.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SpaceDust.sks; sourceTree = "<group>"; };
 		7CCE62AB2045B785009AB8A9 /* cyborg-ninja.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "cyborg-ninja.mp3"; sourceTree = "<group>"; };
+		7CCE62AD2045B7E3009AB8A9 /* explosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explosion.wav; sourceTree = "<group>"; };
+		7CCE62AF2045B85A009AB8A9 /* bonus.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bonus.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				7C26BCE22036174300B087B9 /* LaunchScreen.storyboard */,
 				7C26BCE52036174300B087B9 /* Info.plist */,
 				7CCE62AB2045B785009AB8A9 /* cyborg-ninja.mp3 */,
+				7CCE62AD2045B7E3009AB8A9 /* explosion.wav */,
+				7CCE62AF2045B85A009AB8A9 /* bonus.wav */,
 			);
 			path = Asteroids;
 			sourceTree = "<group>";
@@ -196,6 +202,8 @@
 			files = (
 				7C26BCDF2036174300B087B9 /* Main.storyboard in Resources */,
 				7C26BCD62036174300B087B9 /* GameScene.sks in Resources */,
+				7CCE62B02045B85A009AB8A9 /* bonus.wav in Resources */,
+				7CCE62AE2045B7E4009AB8A9 /* explosion.wav in Resources */,
 				7C26BCE12036174300B087B9 /* Assets.xcassets in Resources */,
 				7C26BCE42036174300B087B9 /* LaunchScreen.storyboard in Resources */,
 				7C279FD720430C430097872B /* SpaceDust.sks in Resources */,
