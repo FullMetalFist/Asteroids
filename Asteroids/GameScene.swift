@@ -79,7 +79,24 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     override func update(_ currentTime: TimeInterval) {
-        // called before each frame is rendered
+        
+        for node in children {
+            if node.position.x < -700 {
+                node.removeFromParent()
+            }
+        }
+        
+        if player.position.x < -400 {
+            player.position.x = -400
+        } else if player.position.x > 400 {
+            player.position.x = 400
+        }
+        
+        if player.position.y < -300 {
+            player.position.y = 300
+        } else if player.position.y > 300 {
+            player.position.y = 300
+        }
     }
     
     func createEnemy() {
